@@ -24,6 +24,7 @@ char terminal_input[BUFFER_SIZE];
 int fd[NUM_PIPES][2];
 int user_input, nread;
 int timeout = 0;
+int message_count = 1;
 struct timeval start_t;
 struct itimerval timer;
 time_t start;
@@ -36,7 +37,7 @@ void readPipe(int pipeEnd, int pipe){
         
         read(pipeEnd, buffer, BUFFER_SIZE);
         if (pipe == 4){
-			fprintf(output, "%6.3f: User Input: %s", current_read_time, buffer);
+			fprintf(output, "%6.3f %s", current_read_time, buffer);
         } else{
        		fprintf(output, "%6.3f %s\n", current_read_time, buffer);
         }
@@ -114,25 +115,15 @@ int main(){
 				}
 			}
 		} else{ // Child Process
-			int message_count = 1;
 			input = input_fd;
 
 			if(i == 4) {
-				struct timeval curr_time;
-		        gettimeofday(&curr_time, NULL);
-		        float current_read_time = (float)((curr_time.tv_sec - start_t.tv_sec) + ((curr_time.tv_usec - start_t.tv_usec)/1000000.));
-
 				fgets(terminal_input, BUFFER_SIZE, stdin);
-				snprintf(buffer, BUFFER_SIZE, "%6.3f  User Input: %s", current_read_time, terminal_input);
+				snprintf(buffer, BUFFER_SIZE, "User Input: %s", terminal_input);
 				writePipe(fd[i]);
 			}
-			else {
-
-				struct timeval curr_time;
-		        gettimeofday(&curr_time, NULL);
-		        float current_read_time = (float)((curr_time.tv_sec - start_t.tv_sec) + ((curr_time.tv_usec - start_t.tv_usec)/1000000.));
-		        
-				snprintf(buffer, BUFFER_SIZE, "%6.3f  Child: %d Message: %d",current_read_time, i, message_count++);
+			else { 
+				snprintf(buffer, BUFFER_SIZE, "Child: %d Message: %d", i, message_count++);
 				writePipe(fd[i]);
 				sleep(rand()%3);
 			}
