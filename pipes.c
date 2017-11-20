@@ -100,7 +100,7 @@ int main(){
 		if(pid > 0){
 			input = input_fd;
 
-			pipeNumber = select(FD_SETSIZE, &input, NULL, NULL, &timeout);
+			pipeNumber = select(FD_SETSIZE, &input, NULL, NULL, NULL);
 			if(pipeNumber < 0){
 				perror("Pipe Number error");
 				exit(1);
