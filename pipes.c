@@ -109,13 +109,13 @@ int main(){
 			} else{
 				for(i = 0; i < NUM_PIPES; i++){
 					if(FD_ISSET(fd[i][READ_END], &input)) {
-						readFromPipe(fd[i][READ_END], i);
+						readPipe(fd[i][READ_END], i);
 					}
 				}
 			}
 		} else{ // Child Process
 			int message_count = 1;
-			inputs = inputfds;
+			input = input_fd;
 
 			if(i == 4) {
 				struct timeval curr_time;
@@ -123,8 +123,8 @@ int main(){
 		        float current_read_time = (float)((curr_time.tv_sec - start_t.tv_sec) + ((curr_time.tv_usec - start_t.tv_usec)/1000000.));
 
 				fgets(terminal_input, BUFFER_SIZE, stdin);
-				snprintf(buffer, BUFFER_SIZE, "%6.3f  User Input: %s", curtime, terminal_input);
-				writeToPipe(fd[i]);
+				snprintf(buffer, BUFFER_SIZE, "%6.3f  User Input: %s", current_read_time, terminal_input);
+				writePipe(fd[i]);
 			}
 			else {
 
@@ -132,8 +132,8 @@ int main(){
 		        gettimeofday(&curr_time, NULL);
 		        float current_read_time = (float)((curr_time.tv_sec - start_t.tv_sec) + ((curr_time.tv_usec - start_t.tv_usec)/1000000.));
 		        
-				snprintf(buffer, BUFFER_SIZE, "%6.3f  Child: %d Message: %d",curtime, i, message_count++);
-				writeToPipe(fd[i]);
+				snprintf(buffer, BUFFER_SIZE, "%6.3f  Child: %d Message: %d",current_read_time, i, message_count++);
+				writePipe(fd[i]);
 				sleep(rand()%3);
 			}
 		} 
