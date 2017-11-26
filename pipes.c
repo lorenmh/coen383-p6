@@ -16,7 +16,6 @@
 #define MAX_SLEEP		2
 #define PIPE_DURAITON	30
 
-
 fd_set input, input_fd;
 FILE* output;
 char buffer[BUFFER_SIZE];
@@ -29,8 +28,10 @@ struct timeval start_t;
 struct itimerval timer;
 time_t start;
 
-void readPipe(int pipeEnd, int pipe){
+void readPipe(int* pd,int pipeEnd, int pipe){
 	if(!timeout){
+		close(pd[WRITE_END]);
+
 		struct timeval curr_time;
         gettimeofday(&curr_time, NULL);
         float current_read_time = (float)((curr_time.tv_sec - start_t.tv_sec) + ((curr_time.tv_usec - start_t.tv_usec)/1000000.));
@@ -110,12 +111,13 @@ int main(){
 			} else{
 				for(i = 0; i < NUM_PIPES; i++){
 					if(FD_ISSET(fd[i][READ_END], &input)) {
-						readPipe(fd[i][READ_END], i);
+						readPipe(fd[i],fd[i][READ_END], i);
 					}
 				}
 			}
 		} else{ // Child Process
 			input = input_fd;
+			int rand_t, s_time;
 
 			if(i == 4) {
 				fgets(terminal_input, BUFFER_SIZE, stdin);
@@ -125,7 +127,8 @@ int main(){
 			else { 
 				snprintf(buffer, BUFFER_SIZE, "Child: %d Message: %d", i, message_count++);
 				writePipe(fd[i]);
-				sleep(rand()%3);
+				sleep(rand() % 3);
+				
 			}
 		} 
 
