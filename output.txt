@@ -1,128 +1,108 @@
- 0.001 Child: 0 Message: 1
- 0.001 Child: 1 Message: 1
- 0.001 Child: 2 Message: 1
- 0.001 Child: 3 Message: 1
- 1.001 Child: 0 Message: 2
- 1.001 Child: 1 Message: 2
- 1.001 Child: 2 Message: 2
- 1.001 Child: 3 Message: 2
- 2.001 Child: 0 Message: 3
- 2.001 Child: 1 Message: 3
+ 0.004 Child: 0 Message: 1
+ 0.005 Child: 1 Message: 1
+ 0.005 Child: 2 Message: 1
+ 0.005 Child: 3 Message: 1
+ 0.005 Child: 0 Message: 2
+ 0.005 Child: 1 Message: 2
+ 0.005 Child: 3 Message: 2
+ 0.005 Child: 0 Message: 3
+ 1.377 User Input: hello
+ 2.001 Child: 0 Message: 4
+ 2.001 Child: 0 Message: 5
+ 2.002 Child: 1 Message: 3
+ 2.002 Child: 1 Message: 4
+ 2.002 Child: 2 Message: 2
  2.002 Child: 2 Message: 3
- 2.002 Child: 3 Message: 3
- 2.276 User Input: ben
- 3.002 Child: 0 Message: 4
- 3.002 Child: 1 Message: 4
- 3.002 Child: 2 Message: 4
- 3.002 Child: 3 Message: 4
- 3.172 User Input: men
- 4.244 User Input: hen
- 5.003 Child: 0 Message: 5
- 5.003 Child: 1 Message: 5
- 5.003 Child: 2 Message: 5
- 5.003 Child: 3 Message: 5
- 5.916 User Input: ken
- 6.004 Child: 0 Message: 6
- 6.004 Child: 1 Message: 6
- 6.004 Child: 2 Message: 6
- 6.004 Child: 3 Message: 6
- 7.005 Child: 0 Message: 7
- 7.005 Child: 2 Message: 7
- 7.005 Child: 3 Message: 7
- 7.005 Child: 1 Message: 7
- 8.196 User Input: who
- 9.006 Child: 0 Message: 8
- 9.006 Child: 1 Message: 8
- 9.006 Child: 2 Message: 8
- 9.006 Child: 3 Message: 8
- 9.148 User Input: what
- 9.876 User Input: when
-11.006 Child: 0 Message: 9
-11.006 Child: 1 Message: 9
-11.006 Child: 2 Message: 9
-11.006 Child: 3 Message: 9
-11.933 User Input: where
-12.973 User Input: why
-13.006 Child: 0 Message: 10
-13.006 Child: 1 Message: 10
-13.006 Child: 2 Message: 10
-13.006 Child: 3 Message: 10
-14.007 Child: 0 Message: 11
-14.007 Child: 1 Message: 11
-14.007 Child: 2 Message: 11
-14.007 Child: 3 Message: 11
-14.007 Child: 0 Message: 12
-14.007 Child: 1 Message: 12
-14.007 Child: 2 Message: 12
-14.007 Child: 3 Message: 12
-14.244 User Input: yell
-15.805 User Input: scream
-16.008 Child: 0 Message: 13
-16.008 Child: 1 Message: 13
-16.008 Child: 2 Message: 13
-16.008 Child: 3 Message: 13
-18.008 Child: 0 Message: 14
-18.008 Child: 1 Message: 14
-18.008 Child: 2 Message: 14
-18.008 Child: 3 Message: 14
-18.008 Child: 0 Message: 15
-18.008 Child: 1 Message: 15
-18.008 Child: 2 Message: 15
-18.008 Child: 3 Message: 15
-18.269 User Input: shout
-19.884 User Input: wow
-20.008 Child: 0 Message: 16
-20.008 Child: 1 Message: 16
-20.008 Child: 2 Message: 16
-20.008 Child: 3 Message: 16
-20.900 User Input: mom
-22.010 Child: 0 Message: 17
-22.010 Child: 1 Message: 17
-22.010 Child: 3 Message: 17
-22.010 Child: 2 Message: 17
-22.060 User Input: dad
-23.011 Child: 0 Message: 18
-23.011 Child: 1 Message: 18
-23.011 Child: 2 Message: 18
-23.011 Child: 3 Message: 18
-23.011 Child: 0 Message: 19
-23.011 Child: 1 Message: 19
-23.011 Child: 2 Message: 19
-23.011 Child: 3 Message: 19
-23.653 User Input: lol
-24.011 Child: 0 Message: 20
-24.011 Child: 1 Message: 20
-24.011 Child: 2 Message: 20
-24.011 Child: 3 Message: 20
-24.011 Child: 0 Message: 21
-24.011 Child: 1 Message: 21
-24.011 Child: 2 Message: 21
-24.011 Child: 3 Message: 21
-24.011 Child: 0 Message: 22
-24.011 Child: 1 Message: 22
-24.011 Child: 2 Message: 22
-24.011 Child: 3 Message: 22
-24.011 Child: 0 Message: 23
-24.011 Child: 1 Message: 23
-24.011 Child: 2 Message: 23
-24.011 Child: 3 Message: 23
-24.909 User Input: pop
-26.012 Child: 0 Message: 24
-26.012 Child: 1 Message: 24
-26.012 Child: 2 Message: 24
-26.012 Child: 3 Message: 24
-26.309 User Input: rock
-27.581 User Input: mock
-28.013 Child: 0 Message: 25
-28.013 Child: 1 Message: 25
-28.013 Child: 2 Message: 25
-28.013 Child: 3 Message: 25
-28.621 User Input: sock
-29.015 Child: 0 Message: 26
-29.015 Child: 1 Message: 26
-29.015 Child: 2 Message: 26
-29.015 Child: 3 Message: 26
-29.015 Child: 0 Message: 27
-29.015 Child: 1 Message: 27
-29.015 Child: 2 Message: 27
-29.015 Child: 3 Message: 27
+ 2.005 Child: 3 Message: 3
+ 2.005 Child: 3 Message: 4
+ 2.005 Child: 3 Message: 5
+ 2.258 User Input: who
+ 3.006 Child: 3 Message: 6
+ 3.153 User Input: what
+ 4.003 Child: 0 Message: 6
+ 4.003 Child: 1 Message: 5
+ 4.003 Child: 2 Message: 4
+ 4.003 Child: 0 Message: 7
+ 4.003 Child: 1 Message: 6
+ 4.003 Child: 2 Message: 5
+ 4.003 Child: 0 Message: 8
+ 4.003 Child: 1 Message: 7
+ 4.003 Child: 2 Message: 6
+ 4.217 User Input: when
+ 5.004 Child: 0 Message: 9
+ 5.004 Child: 1 Message: 8
+ 5.004 Child: 2 Message: 7
+ 5.006 Child: 3 Message: 7
+ 5.681 User Input: where
+ 6.850 User Input: why
+ 7.005 Child: 0 Message: 10
+ 7.005 Child: 1 Message: 9
+ 7.005 Child: 2 Message: 8
+ 7.008 Child: 3 Message: 8
+ 8.008 Child: 3 Message: 9
+ 8.066 User Input: how
+ 9.006 Child: 0 Message: 11
+ 9.006 Child: 1 Message: 10
+ 9.006 Child: 2 Message: 9
+ 9.009 Child: 3 Message: 10
+ 9.266 User Input: pop
+10.006 Child: 0 Message: 12
+10.006 Child: 1 Message: 11
+10.006 Child: 2 Message: 10
+10.673 User Input: rock
+11.008 Child: 0 Message: 13
+11.008 Child: 1 Message: 12
+11.008 Child: 2 Message: 11
+11.010 Child: 3 Message: 11
+12.010 Child: 3 Message: 12
+12.546 User Input: lock
+13.008 Child: 0 Message: 14
+13.008 Child: 1 Message: 13
+13.008 Child: 2 Message: 12
+14.009 Child: 0 Message: 15
+14.009 Child: 1 Message: 14
+14.009 Child: 2 Message: 13
+14.011 Child: 3 Message: 13
+15.130 User Input: drop
+16.010 Child: 0 Message: 16
+16.010 Child: 1 Message: 15
+16.010 Child: 2 Message: 14
+16.012 Child: 3 Message: 14
+16.186 User Input: mop
+18.011 Child: 0 Message: 17
+18.011 Child: 1 Message: 16
+18.011 Child: 2 Message: 15
+18.012 Child: 3 Message: 15
+18.017 User Input: pop
+19.013 Child: 3 Message: 16
+20.012 Child: 0 Message: 18
+20.012 Child: 1 Message: 17
+20.012 Child: 2 Message: 16
+20.202 User Input: w
+21.013 Child: 0 Message: 19
+21.013 Child: 1 Message: 18
+21.013 Child: 2 Message: 17
+21.014 Child: 3 Message: 17
+21.482 User Input: new
+22.418 User Input: old
+23.014 Child: 0 Message: 20
+23.014 Child: 1 Message: 19
+23.014 Child: 2 Message: 18
+23.015 Child: 3 Message: 18
+24.466 User Input: slow
+25.015 Child: 0 Message: 21
+25.015 Child: 1 Message: 20
+25.015 Child: 2 Message: 19
+25.016 Child: 3 Message: 19
+26.002 User Input: moe
+27.016 Child: 0 Message: 22
+27.016 Child: 1 Message: 21
+27.016 Child: 2 Message: 20
+27.017 Child: 3 Message: 20
+27.386 User Input: mow
+28.019 Child: 3 Message: 21
+28.962 User Input: moo
+29.017 Child: 0 Message: 23
+29.017 Child: 1 Message: 22
+29.017 Child: 2 Message: 21
+29.019 Child: 3 Message: 22
