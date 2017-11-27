@@ -39,6 +39,7 @@ void readPipe(int* pd,int pipeEnd, int pipe){
         read(pipeEnd, buffer, BUFFER_SIZE);
         if (pipe == 4){
 			fprintf(output, "%6.3f %s", current_read_time, buffer);
+			printf("%6.3f %s", current_read_time, buffer);
         } else{
        		fprintf(output, "%6.3f %s\n", current_read_time, buffer);
         }
