@@ -13,7 +13,6 @@
 #define READ_END		0
 #define WRITE_END		1
 #define NUM_PIPES		5
-//#define MAX_SLEEP		2
 #define PIPE_DURAITON	30
 
 fd_set input, input_fd;
@@ -21,7 +20,6 @@ FILE* output;
 char buffer[BUFFER_SIZE];
 char terminal_input[BUFFER_SIZE];
 int fd[NUM_PIPES][2];
-//int user_input, nread;
 int timeout = 0;
 int message_count = 1;
 struct timeval start_t;
@@ -39,7 +37,6 @@ void readPipe(int* pd,int pipeEnd, int pipe){
         read(pipeEnd, buffer, BUFFER_SIZE);
         if (pipe == 4){
 			fprintf(output, "%6.3f %s", current_read_time, buffer);
-			printf("%6.3f %s", current_read_time, buffer);
         } else{
        		fprintf(output, "%6.3f %s\n", current_read_time, buffer);
         }
@@ -72,7 +69,6 @@ int main(){
     int seed;
 
 	FD_ZERO(&input_fd);
-//	FD_SET(0, &input_fd);
 
 	int i, pipeNumber;
 	pid_t pid;
@@ -123,7 +119,7 @@ int main(){
 			}
 		} else{ // Child Process
 			input = input_fd;
-//			int rand_t, s_time;
+
 			if(i == 4) {
                 printf("Child 5 => ");
 				fgets(terminal_input, BUFFER_SIZE, stdin);
